@@ -52,6 +52,19 @@ h4 {
   text-align: center;
 }
 
+/* Mobile styles */
+@media (max-width: 767px) {
+  .card.card-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
+  }
+}
+
 
 .card-header {
   margin: 30px;
@@ -72,10 +85,9 @@ h4 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    .card-header-mobile {
-      width: 100%;
-    }
-
+    width: 100%;
+    margin: 0;
+    margin-bottom: 10px;
   }
 }
 
@@ -86,6 +98,15 @@ h4 {
   padding-top: 170px;
   border-radius: 10px 10px 0 0;
   overflow: hidden;
+}
+
+.profile-container-mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 .profile-pic {
@@ -100,10 +121,16 @@ h4 {
 
 /* Mobile styles */
 @media (max-width: 767px) {
-  .text-content.text-content-mobile {
-    text-align: center;
+  .text-content-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
   }
 }
+
 
 .experience-list li {
   font-size: 14px;

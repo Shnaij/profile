@@ -187,3 +187,23 @@ h4 {
 .app-title {
   white-space: nowrap;
 }
+
+
+.app-content {
+  display: flex;
+}
+
+.custom-video-container {
+  margin-right: 10px;
+}
+
+.video-title {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 100px;
+}
+
+.card-content {
+  position: relative;
+}

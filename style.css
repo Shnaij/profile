@@ -17,6 +17,11 @@ p {
   text-align: justify;
 }
 
+.p-container-mobile{
+  margin-left: 10px;
+  margin-right: 20px;
+}
+
 h1 {
   font-family: 'Staatliches', cursive;
   font-size: 30px;
@@ -59,7 +64,7 @@ h4 {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    margin: 0;
+    margin: -2px;
     padding: 0;
     margin-bottom: 10px;
   }
@@ -86,7 +91,7 @@ h4 {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    margin: 0;
+    margin: -2px;
     margin-bottom: 10px;
   }
 }
@@ -119,16 +124,15 @@ h4 {
   flex: 1;
 }
 
-/* Mobile styles */
-@media (max-width: 767px) {
-  .text-content-mobile {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-  }
+.text-content.text-content-mobile {
+  text-align: center;
+}
+
+.text-content.text-content-mobile h2,
+.text-content.text-content-mobile h3,
+.text-content.text-content-mobile ul {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 
@@ -141,17 +145,19 @@ h4 {
 }
 
 
-.experience-list-mobile {
-  list-style: none;
-  padding-left: 0;
-}
-
 .experience-list-mobile li {
-  margin-bottom: 10px;
+  font-size: 14px;
+  margin-left: -5px;
+  margin-right: 30px;
+  text-align: justify;
 }
 
-
-
+/* Styles for mobile devices */
+@media (max-width: 767px) {
+  .email-mobile {
+    display: block; /* Display the email on a new line */
+  }
+}
 
 #intro {
   padding: 20px;
@@ -256,28 +262,40 @@ h4 {
 }
 
 .app-title {
-  white-space: nowrap;
+  text-align: justify;
+  padding-left: 21px; /* Adjust the padding value as needed */
 }
 
 .title-container-mobile {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  text-align: justify;
+  padding-left: 15px; /* Adjust the padding value as needed */
+  padding-right: 5px; /* Adjust the padding value as needed */
+
 }
 
 .app-title-mobile {
   margin-top: 0;
   margin-bottom: 10px;
-  text-align: center;
+  text-align: justify;
+  margin-left: -20px;
+  margin-right: 40px;
 }
 
 .app-text-mobile {
-  text-align: center;
+  text-align: justify;
 }
 
 
 .custom-video-container {
-  margin-right: 10px;
+  margin-left: 10px;
+  margin-right: 40px;
+}
+
+.custom-video-container-mobile {
+  margin-left: 24px;
+  margin-right: 20px;
 }
 
 .app-video-mobile {
@@ -366,6 +384,20 @@ h4 {
     margin-top: 0;
   }
 }
+
+/* Styles for mobile devices */
+@media (max-width: 767px) {
+  .icons-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .icons-container a {
+    margin-right: 10px; /* Adjust the spacing between icons as needed */
+    margin-bottom: 30px;
+  }
+}
+
 
 @media (max-width: 768px) {
   /* Styles for screens up to 768px wide (e.g., mobile devices) */

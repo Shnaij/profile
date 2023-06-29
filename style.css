@@ -137,6 +137,22 @@ h4 {
   margin-bottom: 20px;
 }
 
+/* Styles for mobile devices */
+@media (max-width: 767px) {
+  .text-center-mobile {
+    text-align: center;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .centered-word {
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+
+
 
 .experience-list li {
   font-size: 14px;
